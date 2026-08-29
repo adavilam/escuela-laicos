@@ -1,0 +1,220 @@
+:root {
+  --bg: #f7f5f1;
+  --ink: #23211d;
+  --muted: #6b675f;
+  --accent: #7a2e2e;
+  --accent-soft: #f1e4e0;
+  --card: #ffffff;
+  --border: #e3ddd2;
+  --radius: 10px;
+  font-size: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+header.site {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header.site h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.25rem;
+}
+
+header.site p {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+a { color: var(--accent); }
+
+.materias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.materia-card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--ink);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.materia-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.materia-card .etiqueta {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.6rem;
+}
+
+.materia-card h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+.materia-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+footer.site {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 3rem;
+}
+
+/* --- Página de materia --- */
+
+.volver {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.materia-header h1 {
+  margin-bottom: 0.2rem;
+}
+
+.materia-header .subtitulo {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+section.bloque {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+section.bloque h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+section.bloque ul {
+  padding-left: 1.2rem;
+}
+
+section.bloque li {
+  margin-bottom: 0.5rem;
+}
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 0.75rem 0;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+.boton {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.55rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+
+.boton:hover { opacity: 0.9; }
+
+.nota {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* --- Candado de acceso --- */
+
+#gate {
+  max-width: 380px;
+  margin: 4rem auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+}
+
+#gate h1 {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+#gate input[type="password"] {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin: 1rem 0 0.75rem;
+  font-family: system-ui, sans-serif;
+}
+
+#gate button {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  font-family: system-ui, sans-serif;
+}
+
+#gate .error {
+  color: var(--accent);
+  font-size: 0.85rem;
+  min-height: 1.2em;
+  margin-top: 0.5rem;
+}
+
+#contenido.oculto { display: none; }
