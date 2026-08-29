@@ -45,8 +45,16 @@ con un código de acceso simple (ver advertencia abajo).
    `<div id="gate" data-hash="...">` por ese código.
 4. Sube los cambios (`git add`, `git commit`, `git push`).
 
-Todas las materias vienen con la contraseña temporal **`cambiar123`** —
-cámbiala antes de compartir el sitio.
+Contraseñas actuales por materia:
+
+| Materia | Contraseña |
+|---|---|
+| Historia de la Iglesia | `historiaiglesia2026` |
+| Antropología | `antropologia2026` |
+| Cosmología | `cosmologia2026` |
+| Epistemología | `epistemologia2026` |
+
+Cámbialas cuando lo necesites con `admin/generar-hash.html`.
 
 ## Advertencia sobre el candado de acceso
 
