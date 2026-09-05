@@ -230,6 +230,22 @@ section.bloque h3 {
 
 .boton:hover { opacity: 0.9; }
 
+.descarga {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  background: var(--accent);
+  color: #fff;
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.descarga:hover { opacity: 0.9; }
+
 .nota {
   font-size: 0.85rem;
   color: var(--muted);
