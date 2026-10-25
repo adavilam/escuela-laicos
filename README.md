@@ -1,8 +1,8 @@
-# Materiales de curso — Escuela de Laicos y Seminario
+# Materiales de curso — Escuela Bíblica Teológica (Sede León) y Seminario
 
 Sitio estático con los materiales de 4 materias:
 
-- **Historia de la Iglesia** y **Antropología** (Escuela de Laicos)
+- **Historia de la Iglesia** y **Antropología** (Diócesis de León, Nicaragua. Escuela Bíblica Teológica, Sede León)
 - **Cosmología** y **Epistemología** (Seminario, Filosofía)
 
 Publicado con **GitHub Pages**. Cada materia tiene su propia página protegida
